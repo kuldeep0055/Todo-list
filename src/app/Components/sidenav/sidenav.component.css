@@ -1,0 +1,23 @@
+.sidenav{
+    background-color: rgb(243, 239, 235);
+    height: 400px;
+
+}
+.network{
+    font-size: 20px;
+    padding: 10px;
+}
+.list{
+    text-align: center;
+    margin-top: 15px;
+}
+.list button a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.mat-gridss .mat-grid-tile-content {
+    text-align: left;
+    justify-content: start;
+}

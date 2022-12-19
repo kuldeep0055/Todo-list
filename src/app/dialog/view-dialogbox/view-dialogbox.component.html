@@ -1,0 +1,25 @@
+<div>
+  <div class="content">
+    <h2 mat-dialog-title>View post</h2>
+    <div class="cross-icon" [mat-dialog-close]>X</div>
+  </div>
+  <form [formGroup]="profileForm">
+    <mat-dialog-content class="mat-typography">
+      <p>
+        <mat-form-field appearance="outline" class="input-field">
+          <mat-label>Title</mat-label>
+          <input formControlName="title" matInput [readonly]="true" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" class="input-field">
+          <mat-label>Body</mat-label>
+          <input formControlName="body" matInput [readonly]="true" />
+        </mat-form-field>
+      </p>
+    </mat-dialog-content>
+    <mat-dialog-actions [align]="'end'">
+      <button mat-button mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+  </form>
+</div>

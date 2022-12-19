@@ -1,0 +1,51 @@
+.input-field{
+    width: 100%;
+}
+.update-buttton{
+    background-color: rgb(13, 82, 211);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: 200;
+    margin-right:14px;
+    margin-bottom: 10px;
+    /* font-family: 'Montserrat', sans-serif !important; */
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.cross-icon{
+    margin-top: 24px;
+    margin-right: 25px;
+    color: gray;
+    opacity: 0.7;
+    font-size: 18px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 125.5%;
+    color: #242533;
+}
+
+::ng-deep .input-field {
+   height: 60px;
+}
+::ng-deep .mat-mdc-form-field-infix {
+    min-height: 30px !important;
+    display: contents!important;
+    padding: 8px;
+}
+.mat-mdc-text-field-wrapper .mdc-text-field .ng-tns-c63-13 .mdc-text-field--outlined{
+    min-height: 40px !important;
+}
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding: 10px 0;
+}
+.mdc-text-field__input{
+    padding: 8px !important;
+    color: #242533;
+}

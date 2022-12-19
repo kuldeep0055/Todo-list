@@ -1,0 +1,33 @@
+<div>
+  <div class="content">
+    <h2 mat-dialog-title class="title" *ngIf="editId">Update Network</h2>
+    <h2 mat-dialog-title class="title" *ngIf="!editId">Create Menu</h2>
+    <div class="cross-icon" [mat-dialog-close]>X</div>
+  </div>
+  <mat-dialog-content class="mat-typography">
+    <form [formGroup]="profileForm">
+      <p>
+        <mat-form-field appearance="outline" class="input-field">
+          <mat-label>Title</mat-label>
+          <input formControlName="title" matInput formControlName="title" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" class="input-field">
+          <mat-label>Body</mat-label>
+          <input formControlName="body" matInput formControlName="body" />
+        </mat-form-field>
+      </p>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions [align]="'end'">
+    <span *ngIf="editId"><button mat-button type="button" mat-dialog-close cdkFocusInitial class="update-buttton" (click)="updatepost()">
+        Update
+      </button></span>
+    <span *ngIf="!editId"><button mat-button cdkFocusInitial class="update-buttton" mat-dialog-close
+        (click)="createPost()" [disabled]="!profileForm.valid">
+        Submit
+      </button></span>
+
+  </mat-dialog-actions>
+</div>
